@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/takoTomorrow/Desktop/Project/dotNet8/dotNet8.csproj",
-      "projectName": "dotNet8",
-      "projectPath": "/Users/takoTomorrow/Desktop/Project/dotNet8/dotNet8.csproj",
+      "projectUniqueName": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj",
+      "projectName": "Web",
+      "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj",
       "packagesPath": "/Users/takoTomorrow/.nuget/packages/",
-      "outputPath": "/Users/takoTomorrow/Desktop/Project/dotNet8/obj/",
+      "outputPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/takoTomorrow/.nuget/NuGet/NuGet.Config"
