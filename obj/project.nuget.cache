@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "eCf5C96+Ijr1kWO4DIsqZG4pmx4vuo9r7tHe9M883QmfFUraGyf86fO5AwtYjfhhMrUoMWKKxTeQTqPKgIrZVw==",
+  "success": true,
+  "projectFilePath": "/Users/takoTomorrow/Desktop/Project/dotNet8/dotNet8.csproj",
+  "expectedPackageFiles": [
+    "/Users/takoTomorrow/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
+    "/Users/takoTomorrow/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/takoTomorrow/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/takoTomorrow/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/Users/takoTomorrow/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/Users/takoTomorrow/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/Users/takoTomorrow/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
