@@ -1,27 +1,27 @@
 namespace MyDataBases.FundationDbContext.Models;
 
 /// <summary>
-/// 會員
+/// 帳號角色關聯中介表
 /// </summary>
-public class Member
+public class UserRole
 {
-    /// <summary>
-    /// 會員 Id
-    /// </summary>
-    public Guid Id { get; set; }
-
     /// <summary>
     /// 帳號 relation key
     /// </summary>
     public Guid UserId { get; set; }
 
     /// <summary>
-    /// 暱稱
+    /// 角色 relation key
     /// </summary>
-    public required string NickName { get; set; }
+    public int RoleId { get; set; }
 
     /// <summary>
     /// 帳號
     /// </summary>
-    public MyUser User { get; set; } = null!;
+    public required MyUser MyUser { get; set; }
+
+    /// <summary>
+    /// 角色
+    /// </summary>
+    public required MyRole MyRole { get; set; }
 }
