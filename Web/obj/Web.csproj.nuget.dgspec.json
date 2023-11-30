@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj": {}
+    "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\Web\\Web.csproj": {}
   },
   "projects": {
-    "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/BlocksCore.csproj": {
+    "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\BlocksCore\\BlocksCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/BlocksCore.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\BlocksCore\\BlocksCore.csproj",
         "projectName": "BlocksCore",
-        "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/BlocksCore.csproj",
-        "packagesPath": "/Users/takoTomorrow/.nuget/packages/",
-        "outputPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/obj/",
+        "projectPath": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\BlocksCore\\BlocksCore.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\BlocksCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/takoTomorrow/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj": {
-                "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj"
+              "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\MyDataBases\\MyDataBases.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\MyDataBases\\MyDataBases.csproj"
               }
             }
           }
@@ -63,26 +70,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj": {
+    "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\MyDataBases\\MyDataBases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\MyDataBases\\MyDataBases.csproj",
         "projectName": "MyDataBases",
-        "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj",
-        "packagesPath": "/Users/takoTomorrow/.nuget/packages/",
-        "outputPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/obj/",
+        "projectPath": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\MyDataBases\\MyDataBases.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\MyDataBases\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/takoTomorrow/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -142,37 +156,44 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj": {
+    "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj",
-        "packagesPath": "/Users/takoTomorrow/.nuget/packages/",
-        "outputPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/obj/",
+        "projectPath": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\Web\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/takoTomorrow/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/BlocksCore.csproj": {
-                "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/BlocksCore.csproj"
+              "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\BlocksCore\\BlocksCore.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\BlocksCore\\BlocksCore.csproj"
               },
-              "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj": {
-                "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj"
+              "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\MyDataBases\\MyDataBases.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Project\\GitHub\\C#\\dotNet8\\MyDataBases\\MyDataBases.csproj"
               }
             }
           }
@@ -198,6 +219,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -235,7 +260,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
