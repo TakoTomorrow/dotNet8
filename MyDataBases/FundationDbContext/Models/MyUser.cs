@@ -28,4 +28,22 @@ public class MyUser : IdentityUser<Guid>
     /// </summary>
     /// <value></value>
     public Manager? Manager { get; set; } = null;
+    
+    /// <summary>
+    /// Claim 清單
+    /// </summary>
+    /// <value></value>
+    public ICollection<IdentityUserClaim<Guid>> UserClaims { get; set; } = null!;
+
+    /// <summary>
+    /// 登入清單
+    /// </summary>
+    /// <value></value>
+    public ICollection<IdentityUserLogin<Guid>> UserLogins { get; set; } = null!;
+
+    /// <summary>
+    /// 代幣清單
+    /// </summary>
+    /// <value></value>
+    public ICollection<IdentityUserToken<Guid>> UserTokens { get; set; } = null!;
 }

@@ -4,7 +4,7 @@ using MyDataBases.FundationDbContext.Models;
 
 namespace MyDataBases.FundationDbContext;
 
-public class FundationDbContext : IdentityDbContext
+public partial class FundationDbContext : IdentityDbContext
 {
     /// <summary>
     /// Db 連線字串

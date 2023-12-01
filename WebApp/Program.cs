@@ -1,17 +1,21 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using WebApp.BaseServices;
 using WebApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 #region  Add services to the container.
+// DBContext
 var connectionString = builder.Configuration.GetConnectionString("AzureDbFundation") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+// Identity
+IdentityService.Configuration(builder);
+
+// Razor
 builder.Services.AddRazorPages();
 #endregion
 

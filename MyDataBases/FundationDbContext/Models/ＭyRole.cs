@@ -10,4 +10,11 @@ public class MyRole : IdentityRole<int>
     /// </summary>
     /// <value></value>
     public List<MyUser> Users { get; set; } = null!;
+
+    /// <summary>
+    /// Claim 清單
+    /// </summary>
+    /// <value></value>
+    public ICollection<IdentityRoleClaim<Guid>> RoleClaims { get; set; } = null!;
+
 }
