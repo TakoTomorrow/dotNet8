@@ -4,14 +4,77 @@
     "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj": {}
   },
   "projects": {
-    "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj": {
+    "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/BlocksCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj",
-        "projectName": "Web",
-        "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj",
+        "projectUniqueName": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/BlocksCore.csproj",
+        "projectName": "BlocksCore",
+        "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/BlocksCore.csproj",
         "packagesPath": "/Users/takoTomorrow/.nuget/packages/",
-        "outputPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/obj/",
+        "outputPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/takoTomorrow/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj": {
+                "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj",
+        "projectName": "MyDataBases",
+        "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj",
+        "packagesPath": "/Users/takoTomorrow/.nuget/packages/",
+        "outputPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/takoTomorrow/.nuget/NuGet/NuGet.Config"
@@ -38,9 +101,115 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj",
+        "projectName": "Web",
+        "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/Web.csproj",
+        "packagesPath": "/Users/takoTomorrow/.nuget/packages/",
+        "outputPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/takoTomorrow/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/BlocksCore.csproj": {
+                "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/BlocksCore/BlocksCore.csproj"
+              },
+              "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj": {
+                "projectPath": "/Users/takoTomorrow/Desktop/Project/Github/dotNet8/MyDataBases/MyDataBases.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
