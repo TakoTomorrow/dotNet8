@@ -4,7 +4,7 @@ using MyDataBases.FundationDbContext.Models;
 
 namespace MyDataBases.FundationDbContext;
 
-public class FundationDbContext : IdentityDbContext
+public partial class FundationDbContext : IdentityDbContext<MyUser, MyRole, Guid, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
 {
     /// <summary>
     /// Db 連線字串
@@ -33,29 +33,17 @@ public class FundationDbContext : IdentityDbContext
     }
 
     #region Models
-    /// <summary>
-    /// 帳號
-    /// </summary>
-    /// <value></value>
-    public DbSet<MyUser> Users { get; set; }
+    // /// <summary>
+    // /// 會員
+    // /// </summary>
+    // /// <value></value>
+    // public DbSet<Member> Members { get; set; }
 
-    /// <summary>
-    /// 角色
-    /// </summary>
-    /// <value></value>
-    public DbSet<MyRole> Roles { get; set; }
-
-    /// <summary>
-    /// 會員
-    /// </summary>
-    /// <value></value>
-    public DbSet<Member> Members { get; set; }
-
-    /// <summary>
-    /// 管理者
-    /// </summary>
-    /// <value></value>
-    public DbSet<Manager> Managers { get; set; }
+    // /// <summary>
+    // /// 管理者
+    // /// </summary>
+    // /// <value></value>
+    // public DbSet<Manager> Managers { get; set; }
     #endregion
 
     /// <summary>
