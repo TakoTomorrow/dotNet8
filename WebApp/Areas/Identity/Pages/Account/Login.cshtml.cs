@@ -15,12 +15,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using MyDataBases.FundationDbContext.Models;
+using System.Security.Claims;
 
 namespace WebApp.Areas.Identity.Pages.Account
 {
     public class LoginModel : PageModel
     {
-        private readonly SignInManager<MyUser> _signInManager;
+        public readonly SignInManager<MyUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
 
         public LoginModel(SignInManager<MyUser> signInManager, ILogger<LoginModel> logger)
@@ -106,8 +107,7 @@ namespace WebApp.Areas.Identity.Pages.Account
         {
             returnUrl ??= Url.Content("~/");
 
-            ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-
+            ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();            
             if (ModelState.IsValid)
             {
                 // This doesn't count login failures towards account lockout
@@ -136,6 +136,6 @@ namespace WebApp.Areas.Identity.Pages.Account
 
             // If we got this far, something failed, redisplay form
             return Page();
-        }
+        }        
     }
 }

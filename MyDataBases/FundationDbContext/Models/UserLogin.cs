@@ -4,5 +4,5 @@ namespace MyDataBases.FundationDbContext.Models;
 
 public class UserLogin : IdentityUserLogin<Guid>
 {
-    public virtual required MyUser User { get; set; }
+    public virtual MyUser User { get; set; } = null!;
 }

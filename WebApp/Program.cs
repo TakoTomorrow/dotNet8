@@ -1,6 +1,9 @@
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using MyDataBases.FundationDbContext;
+using MyDataBases.FundationDbContext.Models;
 using WebApp.BaseServices;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,8 +14,17 @@ var connectionString = builder.Configuration.GetConnectionString("AzureDbFundati
 builder.Services.AddDbContext<FundationDbContext>(options =>
     // change the default migrations assembly
     options.UseSqlServer(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-        
+
+// External Auth
+var googleClientId = builder.Configuration["Authentication__Google__ClientId"] ?? throw new Exception("Google OpenId : ClientId is null.");
+var googleClientSecrect = builder.Configuration["Authentication__Google__ClientSecret"]?? throw new Exception("Google OpenId : ClientSecret is null.");
+
+builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+{
+    googleOptions.ClientId = googleClientId;
+    googleOptions.ClientSecret = googleClientSecrect;
+});
+
 // Identity
 IdentityService.Configuration(builder);
 

@@ -9,7 +9,7 @@ public class IdentityService
     public static void Configuration(WebApplicationBuilder builder)
     {
         // bind db
-        builder.Services.AddDefaultIdentity<MyUser>(options => options.SignIn.RequireConfirmedAccount = true)
+        builder.Services.AddDefaultIdentity<MyUser>(options => options.SignIn.RequireConfirmedAccount = true)            
             .AddEntityFrameworkStores<FundationDbContext>();
                 
         // options
