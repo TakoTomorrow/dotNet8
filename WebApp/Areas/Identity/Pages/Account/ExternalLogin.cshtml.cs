@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using MyDataBases.FundationDbContext.Models;
+using Microsoft.IdentityModel.Tokens;
 
 namespace WebApp.Areas.Identity.Pages.Account
 {
@@ -144,11 +145,11 @@ namespace WebApp.Areas.Identity.Pages.Account
                 // If the user does not have an account, then ask the user to create an account.
                 ReturnUrl = returnUrl;
                 ProviderDisplayName = info.ProviderDisplayName;
-                if (info.Principal.HasClaim(c => c.Type == ClaimTypes.Email))
+                if (!email.IsNullOrEmpty())
                 {
                     Input = new InputModel
                     {
-                        Email = info.Principal.FindFirstValue(ClaimTypes.Email)
+                        Email = email
                     };
                 }
                 return Page();
