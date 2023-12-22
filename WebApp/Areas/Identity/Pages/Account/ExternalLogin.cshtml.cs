@@ -123,12 +123,15 @@ namespace WebApp.Areas.Identity.Pages.Account
             {
                 return RedirectToPage("./Lockout");
             }
+
+            // 驗證 mail 是否已經被註冊
             var email = info.Principal.HasClaim(c => c.Type == ClaimTypes.Email)? info.Principal.FindFirstValue(ClaimTypes.Email) : string.Empty;
 
             var user = await _userManager.FindByEmailAsync(email);
 
             if(user != null)
             {
+                // 新增帳號的外部登入
                 await _userManager.AddLoginAsync(user, info);
 
                 var result2 = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
