@@ -86,6 +86,22 @@ namespace WebApp.Areas.Identity.Pages.Account
             [Required]
             [EmailAddress]
             public string Email { get; set; }
+
+            /// <summary>
+            /// 名
+            /// </summary>
+            /// <value></value>
+            [Required]
+            [Display(Name = "FirstName")]
+            public string FirstName { get; set; }
+
+            /// <summary>
+            /// 姓
+            /// </summary>
+            /// <value></value>
+            [Required]
+            [Display(Name = "SecondName")]
+            public string SecondName { get; set; }
         }
 
         public IActionResult OnGet() => RedirectToPage("./Login");
@@ -112,7 +128,7 @@ namespace WebApp.Areas.Identity.Pages.Account
                 ErrorMessage = "Error loading external login information.";
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
-            
+
             // Sign in the user with this external login provider if the user already has a login.
             var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
             if (result.Succeeded)
@@ -125,33 +141,31 @@ namespace WebApp.Areas.Identity.Pages.Account
                 return RedirectToPage("./Lockout");
             }
 
-            // 驗證 mail 是否已經被註冊
-            var email = info.Principal.HasClaim(c => c.Type == ClaimTypes.Email)? info.Principal.FindFirstValue(ClaimTypes.Email) : string.Empty;
-
+            // 驗證 mail 是否已經與帳號綁定
+            var email = info.Principal.HasClaim(c => c.Type == ClaimTypes.Email) ? info.Principal.FindFirstValue(ClaimTypes.Email) : string.Empty;
             var user = await _userManager.FindByEmailAsync(email);
 
-            if(user != null)
+            if (user != null)
             {
                 // 新增帳號的外部登入
                 await _userManager.AddLoginAsync(user, info);
 
                 var result2 = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
-            
+
                 _logger.LogInformation("{Name} logged in with {LoginProvider} provider.", info.Principal.Identity.Name, info.LoginProvider);
                 return LocalRedirect(returnUrl);
             }
             else
-            {                          
+            {
                 // If the user does not have an account, then ask the user to create an account.
                 ReturnUrl = returnUrl;
                 ProviderDisplayName = info.ProviderDisplayName;
-                if (!email.IsNullOrEmpty())
-                {
-                    Input = new InputModel
-                    {
-                        Email = email
-                    };
-                }
+                Input = new InputModel();
+
+                Input.Email = email;
+                Input.FirstName = info.Principal.FindFirstValue(ClaimTypes.Surname) ?? string.Empty;
+                Input.SecondName = info.Principal.FindFirstValue(ClaimTypes.GivenName) ?? string.Empty;
+
                 return Page();
             }
         }
@@ -174,8 +188,8 @@ namespace WebApp.Areas.Identity.Pages.Account
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
 
-                user.FirstName = info.Principal.FindFirstValue(ClaimTypes.Surname);
-                user.SecondName = info.Principal.FindFirstValue(ClaimTypes.GivenName);
+                user.FirstName = Input.FirstName;
+                user.SecondName = Input.SecondName;
 
                 var result = await _userManager.CreateAsync(user);
                 if (result.Succeeded)
@@ -216,7 +230,7 @@ namespace WebApp.Areas.Identity.Pages.Account
             ProviderDisplayName = info.ProviderDisplayName;
             ReturnUrl = returnUrl;
             return Page();
-        }        
+        }
 
         private MyUser CreateUser()
         {
