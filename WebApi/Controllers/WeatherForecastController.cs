@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace WebApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -28,6 +29,17 @@ namespace WebApi.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet(Name = "GetJsonSerialize")]
+        public string[] JsonSerialize()
+        {
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true};
+
+            var js = JsonSerializer.Serialize<string[]>(Summaries,options);
+            var ob = JsonSerializer.Deserialize<string[]>(js,options);
+
+            return ob;
         }
     }
 }
